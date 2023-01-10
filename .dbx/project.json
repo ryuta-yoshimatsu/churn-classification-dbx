@@ -1,11 +1,27 @@
 {
     "environments": {
-        "default": {
+        "dev": {
             "profile": "e2-demo-emea",
             "storage_type": "mlflow",
             "properties": {
-                "workspace_directory": "/Shared/dbx/churn_classification_dbx",
-                "artifact_location": "dbfs:/Shared/dbx/projects/churn_classification_dbx"
+                "workspace_directory": "/Users/ryuta.yoshimatsu@databricks.com/churn_classification_dbx/dev/dbx",
+                "artifact_location": "dbfs:/Users/ryuta.yoshimatsu@databricks.com/churn_classification_dbx/dev"
+            }
+        },
+        "staging": {
+            "profile": "e2-demo-emea",
+            "storage_type": "mlflow",
+            "properties": {
+                "workspace_directory": "/Users/ryuta.yoshimatsu@databricks.com/churn_classification_dbx/staging/dbx",
+                "artifact_location": "dbfs:/Users/ryuta.yoshimatsu@databricks.com/churn_classification_dbx/staging"
+            }
+        },
+        "prod": {
+            "profile": "e2-demo-emea",
+            "storage_type": "mlflow",
+            "properties": {
+                "workspace_directory": "/Users/ryuta.yoshimatsu@databricks.com/churn_classification_dbx/prod/dbx",
+                "artifact_location": "dbfs:/Users/ryuta.yoshimatsu@databricks.com/churn_classification_dbx/prod"
             }
         }
     },
