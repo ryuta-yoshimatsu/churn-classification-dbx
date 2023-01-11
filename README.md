@@ -17,10 +17,10 @@ The following pipelines currently defined within the package are:
 - `feature-table-refresh`
     - Loads the dataset from the source, creates or refreshes the feature table and stores labels to a Delta table.
 - `model-train`
-    - Trains a scikit-learn Random Forest model  
+    - Trains a scikit-learn Random Forest model.
 - `model-sanity-check`
-    - Runs sanity checks to a model version newly registered in the MLflow Model Registry and promotes the model to 
-      Staging when all the checks pass.
+    - Runs sanity checks against the new model version registered in the MLflow Model Registry and promotes the model to 
+      `stage='Staging'` when all the checks pass.
 - `model-deployment`
     - Compare the Staging versus Production models in the MLflow Model Registry. Transition the Staging model to 
       Production if outperforming the current Production model.
