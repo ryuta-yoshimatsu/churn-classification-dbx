@@ -210,8 +210,8 @@ environments:
             <<: *prod-cluster-config
             python_wheel_task:
               package_name: "churn_classification_dbx"
-              entry_point: "feature_table_refresh"
+              entry_point: "model_train"
               parameters: [ '--base-data-params', 'file:fuse://conf/.base_data_params.env',
                             '--env', 'file:fuse://conf/prod/.prod.env',
-                            '--conf-file', 'file:fuse://conf/tasks/feature_table_refresh_config.yml' ]
+                            '--conf-file', 'file:fuse://conf/tasks/model_train_config.yml' ]
 
